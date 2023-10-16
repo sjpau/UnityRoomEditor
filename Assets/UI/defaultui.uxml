@@ -1,0 +1,45 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="rootVisualElement" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+        <ui:VisualElement name="Canvas" style="flex-grow: 1; background-color: rgb(35, 37, 34); width: 160px; height: 200px;">
+            <ui:Button text="Import" display-tooltip-when-elided="true" name="BImport" style="height: 23px; width: 67px;" />
+            <ui:Button text="Save" display-tooltip-when-elided="true" name="BSave" style="height: 23px; width: 74px; position: absolute; top: 29px; left: 80px;" />
+            <ui:Button text="Recover" display-tooltip-when-elided="true" name="BRecover" style="height: 22px; width: 67px; position: absolute; top: 29px; left: 1px;" />
+            <ui:Button text="Export" display-tooltip-when-elided="true" name="BExport" style="height: 23px; width: 74px; position: absolute; top: 1px; left: 80px;" />
+            <ui:VisualElement name="CameraSwitcher" style="flex-grow: 1; background-color: rgb(116, 116, 116); width: 158px; height: 27px; position: absolute; top: 70px; left: 2px;">
+                <ui:Button text="1" display-tooltip-when-elided="true" name="BCam1" style="position: absolute; width: 20px; height: 20px;" />
+                <ui:Button text="2" display-tooltip-when-elided="true" name="BCam2" style="position: absolute; width: 20px; height: 20px; top: 0; left: 36px;" />
+                <ui:Button text="3" display-tooltip-when-elided="true" name="BCam3" style="position: absolute; width: 20px; height: 20px; top: 0; left: 74px;" />
+                <ui:Button text="Free" display-tooltip-when-elided="true" name="BCamFree" style="position: absolute; width: 40px; height: 20px; top: 0; left: 109px;" />
+            </ui:VisualElement>
+            <ui:Label tabindex="-1" text="Cameras" display-tooltip-when-elided="true" name="CamSwitch" style="position: absolute; top: 47px; left: 1px; height: 19px; width: 135px; background-color: rgba(255, 255, 255, 0); -unity-background-image-tint-color: rgba(255, 255, 255, 0); color: rgb(255, 255, 255); font-size: 12px;" />
+            <ui:Label tabindex="-1" text="Tools" display-tooltip-when-elided="true" name="Tools" style="position: absolute; top: 92px; left: 2px; height: 17px; width: 144px; background-color: rgba(255, 255, 255, 0); -unity-background-image-tint-color: rgba(255, 255, 255, 0); color: rgb(255, 255, 255); font-size: 12px;" />
+            <ui:VisualElement name="ToolSwitcher" style="flex-grow: 1; background-color: rgb(116, 116, 116); width: 159px; height: 107px; position: absolute; top: 115px; left: 2px;">
+                <ui:Button text="Object Spawner" display-tooltip-when-elided="true" name="BSpawn" style="height: 20px; width: 151px;" />
+                <ui:Button text="Delete" display-tooltip-when-elided="true" name="BDelete" style="height: 20px; width: 151px;" />
+                <ui:Button text="Select/Move" display-tooltip-when-elided="true" name="BSelect" style="height: 20px; width: 151px;" />
+                <ui:Button text="Color Changer" display-tooltip-when-elided="true" name="BChangeColor" style="height: 20px; width: 151px;" />
+            </ui:VisualElement>
+            <ui:Toggle label="Sticky object" name="TSticky" style="position: absolute; top: 221px; left: -32px; height: 32px; width: 188px; color: rgb(255, 255, 255); -unity-text-align: upper-center; font-size: 12px;" />
+            <ui:VisualElement name="Objects" style="flex-grow: 1; background-color: rgb(145, 145, 145); position: absolute; height: 140px; top: 271px; width: 160px; color: rgb(176, 102, 102); left: 1px;">
+                <ui:Button text="Cube" display-tooltip-when-elided="true" name="BObjCube" style="height: 22px; width: 150px; color: rgb(0, 0, 0); position: absolute;" />
+                <ui:Button text="Sphere" display-tooltip-when-elided="true" name="BObjSphere" style="height: 22px; width: 150px; color: rgb(0, 0, 0); position: absolute; top: 24px; left: 0;" />
+                <ui:Button text="Bed" display-tooltip-when-elided="true" name="BObjBed" style="height: 22px; width: 150px; color: rgb(0, 0, 0); position: absolute; top: 47px; left: 0;" />
+                <ui:Button text="Chair" display-tooltip-when-elided="true" name="BObjChair" style="height: 22px; width: 150px; color: rgb(0, 0, 0); position: absolute; top: 71px; left: 0;" />
+                <ui:Button text="Shelf" display-tooltip-when-elided="true" name="BObjShelf" style="height: 22px; width: 150px; color: rgb(0, 0, 0); position: absolute; top: 94px; left: 0;" />
+                <ui:Button text="Vase" display-tooltip-when-elided="true" name="BObjVase" style="height: 22px; width: 150px; color: rgb(0, 0, 0); position: absolute; top: 116px; left: 0;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="ColorPicks" style="flex-grow: 1; background-color: rgb(110, 110, 110); position: absolute; width: 160px; height: 50px; top: 435px; left: 0;">
+                <ui:Button display-tooltip-when-elided="true" name="cRed" style="height: 11px; width: 9px; background-color: rgb(189, 65, 65); -unity-text-outline-width: 10px;" />
+                <ui:Button display-tooltip-when-elided="true" name="cOrange" style="height: 11px; width: 9px; background-color: rgb(255, 165, 0); position: absolute; top: 0; left: 30px;" />
+                <ui:Button display-tooltip-when-elided="true" name="cYellow" style="height: 11px; width: 9px; background-color: rgb(253, 251, 0); position: absolute; top: 1px; left: 59px;" />
+                <ui:Button display-tooltip-when-elided="true" name="cGreen" style="height: 11px; width: 9px; background-color: rgb(15, 160, 26); position: absolute; top: 1px; left: 88px;" />
+                <ui:Button display-tooltip-when-elided="true" name="cBlue" style="height: 11px; width: 9px; background-color: rgb(36, 186, 249); position: absolute; top: 1px; left: 118px;" />
+                <ui:Button display-tooltip-when-elided="true" name="cDarkBlue" style="height: 11px; width: 9px; background-color: rgb(0, 34, 145); position: absolute; top: 25px; left: 0;" />
+                <ui:Button display-tooltip-when-elided="true" name="cPurple" style="height: 11px; width: 9px; background-color: rgb(113, 0, 120); position: absolute; top: 25px; left: 28px;" />
+            </ui:VisualElement>
+            <ui:Label tabindex="-1" text="Choose Color" display-tooltip-when-elided="true" style="font-size: 12px; position: absolute; top: 406px; left: 3px; width: 149px; color: rgb(255, 255, 255);" />
+            <ui:Label tabindex="-1" text="Choose Object" display-tooltip-when-elided="true" style="font-size: 12px; position: absolute; top: 244px; left: 4px; width: 149px; color: rgb(255, 255, 255);" />
+            <ui:Button text="New" display-tooltip-when-elided="true" name="BNew" style="height: 23px; width: 74px; position: absolute; top: 1px; left: 160px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
